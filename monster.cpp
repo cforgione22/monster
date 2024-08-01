@@ -6,8 +6,6 @@
 #include "monster.h"
 
 
-
-
 Monster::Monster() {}
 
 void Monster::setFood(string fd)
@@ -49,5 +47,3 @@ void Monster::displayInfor()
   uniqueCharacteristic
   height 
 }
-
-#endif
