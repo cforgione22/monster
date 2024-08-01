@@ -3,46 +3,28 @@
 //24.SU.CIS.1202.201
 //08-04-24
 #include "importLibrary.h"
-#include "monster.h"
 
-Monster::Monster() {}
+#ifndef MONSTER_H
+#define MONSTER_H
 
-void Monster::setFood(string fd)
+class Monster 
 {
-  food = fd;
-}
+  private:
+    string food;
+    string sex;
+    string weakness;
+    string defense;
+    string uniqueCharacteristic;
+    double height;
+  pubic:
+    Monster();
+    void setFood(string);
+    void setSex(string);
+    void setWeakness(string);
+    void setDefense(string);
+    void setUniqueCharacteristic(string);
+    void setHeight(double);
+    void displayInfor();
+};
 
-void Monster::setSex(string sx)
-{
-  sex = sx;
-}
-
-void Monster::setWeakness(string weak)
-{
-  weakness = weak;
-}
-
-void Monster::setDefense(string def)
-{
-  defense = def;
-}
-
-void Monster::setUniqueCharacteristic(string uniqueChar)
-{
-  uniqueCharacteristic = uniqueChar;
-}
-
-void Monster::setHeight( double ht)
-{
-  height = ht;
-}
-
-void Monster::displayInfor()
-{
-  food
-  sex
-  weakness
-  defense
-  uniqueCharacteristic
-  height 
-}
+#endif
