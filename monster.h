@@ -15,7 +15,10 @@ class Monster
     string weakness;
     string defense;
     string uniqueCharacteristic;
+    string sound;
+    string transformation;
     double height;
+    
   pubic:
     Monster();
     void setFood(string);
@@ -23,6 +26,8 @@ class Monster
     void setWeakness(string);
     void setDefense(string);
     void setUniqueCharacteristic(string);
+    void setSound(string);
+    void setTransformation(string); 
     void setHeight(double);
     void displayInfor();
 };

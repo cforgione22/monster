@@ -4,4 +4,13 @@
 //08-04-24
 #include "importLibrary.h"
 
-class Frankestein : public 
+#ifndef FRANKENSTEIN_H
+#define FRANKENSTEIN_H
+
+class Frankestein : public Monster
+{
+  private:
+  public:
+
+};
+#endif

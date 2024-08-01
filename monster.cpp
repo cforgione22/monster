@@ -33,6 +33,16 @@ void Monster::setUniqueCharacteristic(string uniqueChar)
   uniqueCharacteristic = uniqueChar;
 }
 
+void Monster::setSound(string noise)
+{
+  sound = noise;
+}
+
+void WereWolf::setTransformation(string tansform)
+{
+  transformation = transform;
+}
+
 void Monster::setHeight( double ht)
 {
   height = ht;
@@ -45,5 +55,7 @@ void Monster::displayInfor()
   weakness
   defense
   uniqueCharacteristic
+  sound
+  tranformatation
   height 
 }
