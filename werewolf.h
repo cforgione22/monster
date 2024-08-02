@@ -10,7 +10,7 @@
 class Werewolf : public Monster
 {
   public:
-    WereWolf();
+    Werewolf();
 };
 
 #endif

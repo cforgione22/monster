@@ -7,9 +7,10 @@
 #ifndef FRANKENSTEIN_H
 #define FRANKENSTEIN_H
 
-class Frankestein : public Monster
+class Frankenstein : public Monster
 {
   public:
-  Frankentein();
+  Frankenstein();
 };
+
 #endif

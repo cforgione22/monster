@@ -22,39 +22,39 @@ using namespace std;
  *
  */
 
-float getRandom(int min, int max) {
-  random_device rd;
-  uniform_int_distribution<int> distribution(min, max);
-  mt19937 engine(rd());
-  // Mersenne twister MT19937
+// float getRandom(int min, int max) {
+//   random_device rd;
+//   uniform_int_distribution<int> distribution(min, max);
+//   mt19937 engine(rd());
+//   // Mersenne twister MT19937
 
-  return distribution(engine);
-}
+//   return distribution(engine);
+// }
 
-int getInteger(string sayThis) {
-  cout << "\n\n" << sayThis;
-  int number = 0;
+// int getInteger(string sayThis) {
+//   cout << "\n\n" << sayThis;
+//   int number = 0;
 
-  // TRAP them WHILE entering data, if invalid
-  while (!(cin >> number) || cin.fail()) {
-    cout << "\n\nERROR: INVALID data. Try again";
-    cin.clear();  // clear the error failure flag
-    cin.ignore(); // clear the keyboard input buffer
-    cout << "\n\n" << sayThis;
-  }
-  return number;
-}
+//   // TRAP them WHILE entering data, if invalid
+//   while (!(cin >> number) || cin.fail()) {
+//     cout << "\n\nERROR: INVALID data. Try again";
+//     cin.clear();  // clear the error failure flag
+//     cin.ignore(); // clear the keyboard input buffer
+//     cout << "\n\n" << sayThis;
+//   }
+//   return number;
+// }
 
-int getInteger(string sayThis, int min, int max) {
-  cout << "\n\n" << sayThis;
-  int number = 0;
+// int getInteger(string sayThis, int min, int max) {
+//   cout << "\n\n" << sayThis;
+//   int number = 0;
 
-  // TRAP them WHILE entering data, if invalid
-  while (!(cin >> number) || cin.fail() || number < min || number > max) {
-    cout << "\n\nERROR: INVALID data. Try again";
-    cin.clear(); // clear the error failure flag
-    cin.ignore(); // clear the keyboard input buffer
-    cout << "\n\n" << sayThis;
-  }
-  return number;
-}
+//   // TRAP them WHILE entering data, if invalid
+//   while (!(cin >> number) || cin.fail() || number < min || number > max) {
+//     cout << "\n\nERROR: INVALID data. Try again";
+//     cin.clear(); // clear the error failure flag
+//     cin.ignore(); // clear the keyboard input buffer
+//     cout << "\n\n" << sayThis;
+//   }
+//   return number;
+// }

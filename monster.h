@@ -13,19 +13,21 @@ class Monster
     string food;
     string uniqueCharacteristic;
     string sound;
-    double height;
-    bool wings;
-    bool pale;
-    bool hybernate;
-  pubic:
+    double heightInFeet;
+    string wings;
+    string pale;
+    string hybernate;
+    string claws;
+  public:
     Monster();
     void setFood(string);
     void setUniqueCharacteristic(string);
     void setSound(string);
     void setHeight(double);
-    void setWings(bool);
-    void setPale(bool);
-    void setHybernate(bool);
+    void setWings(string);
+    void setPale(string);
+    void setHybernate(string);
+    void setClaws(string);
     void displayInfo();
 };
 

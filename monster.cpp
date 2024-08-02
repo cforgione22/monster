@@ -25,31 +25,37 @@ void Monster::setSound(string noise)
 
 void Monster::setHeight( double ht)
 {
-  height = ht;
+  heightInFeet = ht;
 }
-void Monster::setWings(bool wing)
+void Monster::setWings(string wing)
 {
   wings = wing;
 }
     
-void Monster::setPale(bool pl)
+void Monster::setPale(string pl)
 {
   pale = pl;
 }
 
-void Monster::setHybernate(bool hyber)
+void Monster::setHybernate(string hyber)
 {
   hybernate = hyber;
 }
 
-
-void Monster::displayInfor()
+void Monster::setClaws(string nails)
 {
-  cout<< "Food: " << food << end;
-  cout<< "Unique Characteristic: " << uniqueCharacteristic << end;
-  cout<< "Sounds: " << sound << end;
-  cout<< "Height: " << height  << end;
-  cout<< "Wing: " << wings << end;
-  cout<< "Pale: " << pale << end;
+  claws = nails;
+}
+
+void Monster::displayInfo()
+{
+  cout << "                               ᄽ❮ȍ∷ő❯ᄿ    Guess the Monster!    ᄽ❮ȍ∷ő❯ᄿ        \n\n\n\n";
+  cout << "Food: " << food << endl;
+  cout << "Unique Characteristic: " << uniqueCharacteristic << endl;
+  cout << "Sounds: " << sound << endl;
+  cout << "Height: " << heightInFeet << " feet" << endl;
+  cout << "Wing: " << wings << endl;
+  cout << "Pale: " << pale << endl;
   cout << "Hybernate: " << hybernate << endl;
+  cout << "Claws: " << claws << endl;
 }

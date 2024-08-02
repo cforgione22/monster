@@ -3,12 +3,14 @@
 //24.SU.CIS.1202.201
 //08-04-24
 #include "importLibrary.h"
+#include "theCreeper.h"
 
-TheCreeper::TheCreeper(){}
+
+TheCreeper::TheCreeper() {}
 
 void TheCreeper::setReasonForHumanConsumption(string humanConsump)
 {
-  ReasonForHumanConsumption = humanConsump;
+  reasonForHumanConsumption = humanConsump;
 }
 
 void TheCreeper::displayInfo()

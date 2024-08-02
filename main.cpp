@@ -4,20 +4,41 @@
 //08-04-24
 
 #include "importLibrary.h"
+#include "monster.cpp"
+#include "monster.h"
+#include "frankenstein.cpp"
+#include "frankenstein.h"
+#include "werewolf.cpp"
+#include "werewolf.h"
+#include "vampire.cpp"
+#include "vampire.h"
+#include "theCreeper.cpp"
+#include "theCreeper.h"
 
 void instructions();
+void createFrankenstein();
+void createWerewolfs();
+void createvampires();
+void createTheCreeper();
 
 int main()
 {
+  // vector <Monster> monsters;
+  // monsters.push_back <Monster> (new frankenstein());
+  // monsters.push_back <Monster> (new werewolf());
+  // monsters.push_back <Monster> (new vampire());
+  // monsters.push_back <Monster> (new theCreeper());
+    
+  instructions();
+  createFrankenstein();
   
-instructions();
   
   return 0;
 }
 
 void instructions()
 {
-  cout << "                            ᄽ❮ȍ∷ő❯ᄿ   Welcome to Guess The Monster Game!   ᄽ❮ȍ∷ő❯ᄿ\n\n\n\n";
+  cout << "                            ᄽ❮ȍ∷ő❯ᄿ  Welcome to Guess The Monster Game!   ᄽ❮ȍ∷ő❯ᄿ\n\n\n\n";
   cout << "\nFor this game you will be guessing which monster is given to you by reading the hints.";
   cout << "\n\nMONSTERS:";
   cout << "\n\n1. Frankenstein";
@@ -31,3 +52,40 @@ void instructions()
   system("clear"); 
 }
 
+void createFrankenstein()
+{
+  Frankenstein frankenstein;
+  
+  string fd = "Berries and Nuts";
+  string uniqueChar = "has human emotions";
+  string noise = "growls";
+  double ht = 8;
+  string wing = "No";
+  string pl = "Yes";
+  string hyber = "No";
+  string nails = "No";
+  frankenstein.setFood(fd);
+  frankenstein.setUniqueCharacteristic(uniqueChar);
+  frankenstein.setSound(noise);
+  frankenstein.setHeight(ht);
+  frankenstein.setWings(wing) ;   
+  frankenstein.setPale(pl);
+  frankenstein.setHybernate(hyber);
+  frankenstein.setClaws(nails);
+  frankenstein.displayInfo();
+}
+
+void createWerewolf()
+{
+  Werewolf werewolf;
+}
+
+void createVampire()
+{
+  Vampire vampire;
+}
+
+void createTheCreeper()
+{
+  TheCreeper thecreeper;
+}
