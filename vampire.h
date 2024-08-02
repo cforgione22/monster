@@ -9,13 +9,8 @@
 
 class Vampire : public Monster
 {
-  private:
-    string pale;
-    double windSpan;
   public:
     Vampire();
-    void setPale(string);
-    void setWingSpan(double)
 };
 
 #endif

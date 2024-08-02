@@ -38,7 +38,7 @@ void Monster::setSound(string noise)
   sound = noise;
 }
 
-void WereWolf::setTransformation(string tansform)
+void Monster::setTransformation(string tansform)
 {
   transformation = transform;
 }
@@ -46,6 +46,15 @@ void WereWolf::setTransformation(string tansform)
 void Monster::setHeight( double ht)
 {
   height = ht;
+}
+void Monster::setWings(bool wing)
+{
+  wings = wing;
+}
+    
+void Monster::setPale(bool pl)
+{
+  pale = pl;
 }
 
 void Monster::displayInfor()
@@ -58,4 +67,6 @@ void Monster::displayInfor()
   sound
   tranformatation
   height 
+  wings
+  pale
 }

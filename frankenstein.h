@@ -9,8 +9,7 @@
 
 class Frankestein : public Monster
 {
-  private:
   public:
-
+  Frankentein();
 };
 #endif

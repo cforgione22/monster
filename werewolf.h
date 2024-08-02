@@ -11,12 +11,10 @@ class Werewolf : public Monster
 {
   private:
     string furColor;
-    string claws;
-    
   public:
     WereWolf();
     void setFurColor(string);
-    void setClaws(string);
+    void displayInfo();
 };
 
 #endif

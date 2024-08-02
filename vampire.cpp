@@ -6,14 +6,4 @@
 
 Vampire::Vampire();
 
-void Vampire::setPale(string pl);
-{
-  pale = pl;
-}
-
-void Vampire::setWingSpan(double wSpan)
-
-{
-  wingSpan = wspan;
-}
 

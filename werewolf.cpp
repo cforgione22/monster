@@ -4,15 +4,14 @@
 //08-04-24
 #include "importLibrary.h"
 
-WereWolf::Werewolf() {}
+Werewolf::Werewolf() {}
 
-void WereWolf::setFurColor(string furC)
+void Werewolf::setFurColor(string furC)
 {
   furColor = furC;
 }
 
-void WereWolf::setClaws(string nails)
+void Werewolf::displayInfo()
 {
-  claws = nails;
+  furColor;
 }
-

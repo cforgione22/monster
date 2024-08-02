@@ -18,7 +18,8 @@ class Monster
     string sound;
     string transformation;
     double height;
-    
+    bool wings;
+    bool pale;
   pubic:
     Monster();
     void setFood(string);
@@ -29,7 +30,9 @@ class Monster
     void setSound(string);
     void setTransformation(string); 
     void setHeight(double);
-    void displayInfor();
+    void setWings(bool);
+    void setPale(bool);
+    void displayInfo();
 };
 
 #endif
