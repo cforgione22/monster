@@ -5,13 +5,3 @@
 #include "importLibrary.h"
 
 Werewolf::Werewolf() {}
-
-void Werewolf::setFurColor(string furC)
-{
-  furColor = furC;
-}
-
-void Werewolf::displayInfo()
-{
-  furColor;
-}

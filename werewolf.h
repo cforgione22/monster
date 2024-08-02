@@ -9,12 +9,8 @@
 
 class Werewolf : public Monster
 {
-  private:
-    string furColor;
   public:
     WereWolf();
-    void setFurColor(string);
-    void displayInfo();
 };
 
 #endif

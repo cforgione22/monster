@@ -6,11 +6,6 @@
 
 TheCreeper::TheCreeper(){}
 
-void TheCreeper::setHybernationTime(int hyberTime)
-{
-  hybernationTime = hyberTime;
-}
-
 void TheCreeper::setReasonForHumanConsumption(string humanConsump)
 {
   ReasonForHumanConsumption = humanConsump;
@@ -18,6 +13,5 @@ void TheCreeper::setReasonForHumanConsumption(string humanConsump)
 
 void TheCreeper::displayInfo()
 {
-  hybernationTime
-  ReasonForHumanConsumption
+  cout << "Reason for Human Consumption: " << reasonForHumanConsumption << endl;
 }

@@ -10,7 +10,6 @@
 class TheCreeper : public Monster
 {
   private:
-    int hybernationTime;
     string reasonForHumanConsumption;
     
   public:

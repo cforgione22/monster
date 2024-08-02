@@ -13,21 +13,6 @@ void Monster::setFood(string fd)
   food = fd;
 }
 
-void Monster::setSex(string sx)
-{
-  sex = sx;
-}
-
-void Monster::setWeakness(string weak)
-{
-  weakness = weak;
-}
-
-void Monster::setDefense(string def)
-{
-  defense = def;
-}
-
 void Monster::setUniqueCharacteristic(string uniqueChar)
 {
   uniqueCharacteristic = uniqueChar;
@@ -36,11 +21,6 @@ void Monster::setUniqueCharacteristic(string uniqueChar)
 void Monster::setSound(string noise)
 {
   sound = noise;
-}
-
-void Monster::setTransformation(string tansform)
-{
-  transformation = transform;
 }
 
 void Monster::setHeight( double ht)
@@ -57,16 +37,19 @@ void Monster::setPale(bool pl)
   pale = pl;
 }
 
+void Monster::setHybernate(bool hyber)
+{
+  hybernate = hyber;
+}
+
+
 void Monster::displayInfor()
 {
-  food
-  sex
-  weakness
-  defense
-  uniqueCharacteristic
-  sound
-  tranformatation
-  height 
-  wings
-  pale
+  cout<< "Food: " << food << end;
+  cout<< "Unique Characteristic: " << uniqueCharacteristic << end;
+  cout<< "Sounds: " << sound << end;
+  cout<< "Height: " << height  << end;
+  cout<< "Wing: " << wings << end;
+  cout<< "Pale: " << pale << end;
+  cout << "Hybernate: " << hybernate << endl;
 }
