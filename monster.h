@@ -10,24 +10,28 @@
 class Monster 
 {
   private:
+    string name;
     string food;
     string uniqueCharacteristic;
     string sound;
     double heightInFeet;
-    string wings;
-    string pale;
-    string hybernate;
-    string claws;
+    bool wings;
+    bool pale;
+    bool hybernate;
+    bool claws;
   public:
     Monster();
+    Monster(string);
     void setFood(string);
     void setUniqueCharacteristic(string);
     void setSound(string);
+    void setName(string);
     void setHeight(double);
-    void setWings(string);
-    void setPale(string);
-    void setHybernate(string);
-    void setClaws(string);
+    void setWings(bool);
+    void setPale(bool);
+    void setHybernate(bool);
+    void setClaws(bool);
+    string getName();
     void displayInfo();
 };
 

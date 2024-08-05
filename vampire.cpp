@@ -6,6 +6,6 @@
 #include "vampire.h"
 
 
-Vampire::Vampire() {}
+Vampire::Vampire() : Monster("VAMPIRE") {}
 
 

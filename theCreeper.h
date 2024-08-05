@@ -14,7 +14,6 @@ class TheCreeper : public Monster
     
   public:
     TheCreeper();
-    void setHybernationTime(int);
     void setReasonForHumanConsumption(string);
     void displayInfo();
 };

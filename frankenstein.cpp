@@ -5,4 +5,4 @@
 #include "importLibrary.h"
 #include "frankenstein.h"
 
-Frankenstein::Frankenstein() {}
+Frankenstein::Frankenstein() : Monster("FRANKENSTEIN") {}

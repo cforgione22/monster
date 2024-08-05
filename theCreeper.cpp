@@ -6,7 +6,8 @@
 #include "theCreeper.h"
 
 
-TheCreeper::TheCreeper() {}
+TheCreeper::TheCreeper() : Monster("THE CREEPER") {
+}
 
 void TheCreeper::setReasonForHumanConsumption(string humanConsump)
 {
@@ -15,5 +16,6 @@ void TheCreeper::setReasonForHumanConsumption(string humanConsump)
 
 void TheCreeper::displayInfo()
 {
+  Monster::displayInfo();
   cout << "Reason for Human Consumption: " << reasonForHumanConsumption << endl;
 }

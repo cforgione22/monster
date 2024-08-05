@@ -6,4 +6,4 @@
 #include "werewolf.h"
 
 
-Werewolf::Werewolf() {}
+Werewolf::Werewolf() : Monster("WEREWOLF") {}

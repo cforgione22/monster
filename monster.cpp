@@ -8,6 +8,10 @@
 
 Monster::Monster() {}
 
+Monster::Monster(string n) {
+  name = n;
+}
+
 void Monster::setFood(string fd)
 {
   food = fd;
@@ -27,24 +31,28 @@ void Monster::setHeight( double ht)
 {
   heightInFeet = ht;
 }
-void Monster::setWings(string wing)
+void Monster::setWings(bool wing)
 {
   wings = wing;
 }
     
-void Monster::setPale(string pl)
+void Monster::setPale(bool pl)
 {
   pale = pl;
 }
 
-void Monster::setHybernate(string hyber)
+void Monster::setHybernate(bool hyber)
 {
   hybernate = hyber;
 }
 
-void Monster::setClaws(string nails)
+void Monster::setClaws(bool nails)
 {
   claws = nails;
+}
+string Monster::getName()
+{
+  return name;
 }
 
 void Monster::displayInfo()
@@ -59,3 +67,4 @@ void Monster::displayInfo()
   cout << "Hybernate: " << hybernate << endl;
   cout << "Claws: " << claws << endl;
 }
+
